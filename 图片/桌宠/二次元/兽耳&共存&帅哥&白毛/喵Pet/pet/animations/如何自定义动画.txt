@@ -1,0 +1,22 @@
+1.把satori.xml复制一份
+2.节点解释:
+(1)设置图片宽高
+<settings
+	height="128"
+	width="128" >
+</settings>
+
+(2)设置动画
+<animation
+	name="stand"			//动画的名字,随便取
+	loop="10"			//循环次数,可以不写
+	type="STAND|ACTIVE" >		//动画的类型,有以下几种,有多个用|分开
+					//STAND,STUDY,WORK,SEARCH,SLEEP,ACTIVE,WALK
+					//站着 ,学习 ,工作,探索  ,睡觉 ,闲着  ,走
+					//ACTIVE类型的动作必须有,SLEEP动作最好有....
+
+	<animationinfo			//定义动画的一帧
+	    delay="5000"		//持续时间
+	    path="/satori/shime1.png" >	//图片的路径
+	</animationinfo>
+</animation>

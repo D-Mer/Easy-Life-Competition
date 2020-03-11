@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="thp/animation" elementFormDefault="qualified">
+	<xs:element name="animations">
+		<xs:complexType>
+			<xs:attribute name="name" use="required"></xs:attribute>
+			<xs:attribute name="version" type="xs:double" use="required"></xs:attribute>
+			<xs:attribute name="type" type="xs:string" fixed="NORMAL"></xs:attribute>
+			<xs:sequence>
+				<xs:element name="animation" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:attribute name="name" use="required"></xs:attribute>
+						<xs:attribute name="loop" type="xs:int"></xs:attribute>
+						<xs:sequence>
+							<xs:element name="animationinfo">
+								<xs:complexType>
+									<xs:attribute name="path" type="xs:string" use="required"></xs:attribute>
+									<xs:attribute name="delay" type="xs:int" use="required"></xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:sequence>
+				<xs:element name="settings" maxOccurs="1">
+					<xs:complexType>
+						<xs:attribute name="width" use="required" type="xs:int"></xs:attribute>
+						<xs:attribute name="height" use="required" type="xs:int"></xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

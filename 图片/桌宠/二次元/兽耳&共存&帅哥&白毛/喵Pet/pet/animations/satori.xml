@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:thp="http://www.thp.org/animation"
+    name="satori"
+    version="0.1"
+    xmlns="thp"
+    xsi:schemaLocation="thp/animation animation.xsd" >
+
+    <settings
+        height="128"
+        width="128" >
+    </settings>
+
+    <animation
+        name="stand"
+        type="STAND|ACTIVE" >
+
+        <animationinfo
+            delay="5000"
+            path="/satori/shime1.png" >
+        </animationinfo>
+    </animation>
+
+    <animation
+        name="walk"
+        loop="10"
+        type="WALK|ACTIVE" >
+
+        <animationinfo
+            delay="200"
+            path="/satori/shime2.png" >
+        </animationinfo>
+
+        <animationinfo
+            delay="200"
+            path="/satori/shime3.png" >
+        </animationinfo>
+    </animation>
+
+    <animation
+        name="sleep"
+        loop="20"
+        type="SLEEP" >
+
+        <animationinfo
+            delay="1000"
+            path="/satori/shime18.png" >
+        </animationinfo>
+
+        <animationinfo
+            delay="1000"
+            path="/satori/shime20.png" >
+        </animationinfo>
+
+        <animationinfo
+            delay="1000"
+            path="/satori/shime21.png" >
+        </animationinfo>
+    </animation>
+
+    <animation
+        name="sit"
+        loop="20"
+        type="SIT|ACTIVE" >
+
+        <animationinfo
+            delay="200"
+            path="/satori/shime31.png" >
+        </animationinfo>
+
+        <animationinfo
+            delay="200"
+            path="/satori/shime32.png" >
+        </animationinfo>
+
+        <animationinfo
+            delay="200"
+            path="/satori/shime33.png" >
+        </animationinfo>
+    </animation>
+
+    <animation
+        name="sit2"
+        type="SIT|ACTIVE" >
+
+        <animationinfo
+            delay="2000"
+            path="/satori/shime26.png" >
+        </animationinfo>
+
+        <animationinfo
+            delay="2000"
+            path="/satori/shime27.png" >
+        </animationinfo>
+
+        <animationinfo
+            delay="2000"
+            path="/satori/shime26.png" >
+        </animationinfo>
+
+        <animationinfo
+            delay="2000"
+            path="/satori/shime27.png" >
+        </animationinfo>
+
+        <animationinfo
+            delay="2000"
+            path="/satori/shime28.png" >
+        </animationinfo>
+
+        <animationinfo
+            delay="5000"
+            path="/satori/shime29.png" >
+        </animationinfo>
+    </animation>
+
+    <animation
+        name="sit3"
+        type="SIT|ACTIVE" >
+
+        <animationinfo
+            delay="5000"
+            path="/satori/shime11.png" >
+        </animationinfo>
+    </animation>
+
+</animations>
